@@ -8,8 +8,9 @@
     --dark: #04000B;
 }
 
-
-
+.translate-btn {cursor: pointer;}
+.navbar .translate-btn .dropdown-toggle::after { content: none; }
+ 
 /*** Spinner ***/
 #spinner {
     opacity: 0;

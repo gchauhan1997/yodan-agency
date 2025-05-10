@@ -92,3 +92,10 @@
     
 })(jQuery);
 
+// language switcher
+function setLanguage(lang) {
+  document.querySelectorAll('[data-lang-en]').forEach(el => {
+    el.textContent = el.getAttribute(`data-lang-${lang}`);
+  });
+}
+
