@@ -92,12 +92,7 @@
 
 })(jQuery);
 
-// language switcher
-// function setLanguage(lang) {
-//   document.querySelectorAll('[data-lang-en]').forEach(el => {
-//     el.textContent = el.getAttribute(`data-lang-${lang}`);
-//   });
-// }
+
 
 function setLanguage(lang) {
     // Update all elements with language data attributes
@@ -105,18 +100,20 @@ function setLanguage(lang) {
         el.textContent = el.getAttribute(`data-lang-${lang}`);
     });
 
-    // Update the dropdown label
+    // Update all language dropdown displays
     const langName = {
         en: 'EN',
         ko: 'KR'
     };
-    document.getElementById('selectedLanguage').textContent = langName[lang] || 'Language';
+    document.querySelectorAll('.selectedLanguage').forEach(el => {
+        el.textContent = langName[lang] || 'Language';
+    });
 
-    // Save language selection
+    // Save the preference
     localStorage.setItem('preferredLanguage', lang);
 }
 
-// On page load, apply saved language or default to Korean
+// Load saved language on page load
 window.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'ko';
     setLanguage(savedLang);
