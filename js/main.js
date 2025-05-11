@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -24,8 +24,8 @@
             $('.navbar').removeClass('sticky-top shadow-sm');
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -35,7 +35,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -45,7 +45,7 @@
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
-    }, {offset: '80%'});
+    }, { offset: '80%' });
 
 
     // Facts counter
@@ -62,17 +62,17 @@
         margin: 25,
         dots: false,
         loop: true,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
         ],
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            992:{
-                items:2
+            992: {
+                items: 2
             }
         }
     });
@@ -87,15 +87,38 @@
         $("#portfolio-flters li").removeClass('active');
         $(this).addClass('active');
 
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
+        portfolioIsotope.isotope({ filter: $(this).data('filter') });
     });
-    
+
 })(jQuery);
 
 // language switcher
+// function setLanguage(lang) {
+//   document.querySelectorAll('[data-lang-en]').forEach(el => {
+//     el.textContent = el.getAttribute(`data-lang-${lang}`);
+//   });
+// }
+
 function setLanguage(lang) {
-  document.querySelectorAll('[data-lang-en]').forEach(el => {
-    el.textContent = el.getAttribute(`data-lang-${lang}`);
-  });
+    // Update all elements with language data attributes
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-lang-${lang}`);
+    });
+
+    // Update the dropdown label
+    const langName = {
+        en: 'EN',
+        ko: 'KR'
+    };
+    document.getElementById('selectedLanguage').textContent = langName[lang] || 'Language';
+
+    // Save language selection
+    localStorage.setItem('preferredLanguage', lang);
 }
+
+// On page load, apply saved language or default to Korean
+window.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLanguage') || 'ko';
+    setLanguage(savedLang);
+});
 
