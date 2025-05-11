@@ -11,11 +11,11 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-     
+
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -32,7 +32,8 @@
 <body>
     <div class=" bg-white p-0">
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
@@ -43,39 +44,60 @@
         <!-- Navbar & Hero Start -->
         <div class=" position-relative p-0">
             <header>
-                <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-0">
                     <div class="container-xl">
                         <a href="index.html" class="navbar-brand p-0">
-                            <h1 class="m-0">Yodan</h1>
-                            <!-- <img src="img/logo.png" alt="Logo"> -->
+                            <h1 class="m-0" data-lang-en="Yodan" data-lang-ko="요단">Yodan</h1>
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                            <span class="fa fa-bars"></span>
-                        </button>
+                        <div class="right d-flex align-items-center gap-2 d-lg-none">
+                            <!-- Mobile Language Dropdown -->
+                            <div class="nav-item dropdown translate-btn text-danger bg-light mx-lg-2">
+                                <a class="nav-link dropdown-toggle fs-6 px-2 py-1" data-bs-toggle="dropdown">
+                                    <i class="fas fa-language me-1"></i> <span class="selectedLanguage">Korean</span>
+                                </a>
+                                <div class="dropdown-menu px-2 m-0">
+                                    <button class="dropdown-item" onclick="setLanguage('en')">English</button>
+                                    <button class="dropdown-item" onclick="setLanguage('ko')">Korean</button>
+                                </div>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarCollapse">
+                                <span class="fa fa-bars"></span>
+                            </button>
+                        </div>
+
                         <div class="collapse navbar-collapse" id="navbarCollapse">
                             <div class="navbar-nav mx-auto py-0">
-                                <a href="index.html" class="nav-item nav-link active">Home</a>
-                                <a href="about.html" class="nav-item nav-link">About</a>
-                                <a href="service.html" class="nav-item nav-link">Service</a>
-                                <a href="project.html" class="nav-item nav-link">Project</a>
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
-                                    <div class="dropdown-menu m-0">
-                                        <a href="team.html" class="dropdown-item">Our Team</a>
-                                        
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                <a href="index.html" class="nav-item nav-link active" data-lang-en="Home"
+                                    data-lang-ko="홈">Home</a>
+                                <a href="about.html" class="nav-item nav-link" data-lang-en="About"
+                                    data-lang-ko="소개">About</a>
+                                <a href="service.html" class="nav-item nav-link" data-lang-en="Service"
+                                    data-lang-ko="서비스">Service</a>
+                                <a href="project.html" class="nav-item nav-link" data-lang-en="Project"
+                                    data-lang-ko="프로젝트">Project</a>
                             </div>
-                            <a href="" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>
+                            <a href="contact.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
+                                data-lang-en="Contact Us" data-lang-ko="문의하기">Contact Us</a>
+
+                            <!-- Desktop Language Dropdown -->
+                            <div class="nav-item d-none d-lg-block dropdown translate-btn text-danger bg-light mx-lg-2">
+                                <a class="nav-link dropdown-toggle fs-6 px-3 py-1" data-bs-toggle="dropdown">
+                                    <i class="fas fa-language me-1"></i> <span class="selectedLanguage">Korean</span>
+                                </a>
+                                <div class="dropdown-menu px-2 m-0">
+                                    <button class="dropdown-item" onclick="setLanguage('en')">English</button>
+                                    <button class="dropdown-item" onclick="setLanguage('ko')">Korean</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </nav>
             </header>
 
             <div class=" py-5 bg-primary hero-header">
-                <div class="container-xl my-5 py-5 px-lg-5">
-                    <div class="row g-5 py-5">
+                <div class="container-xl my-5">
+                    <div class="row gy-5 py-5">
                         <div class="col-12 text-center">
                             <h1 class="text-white animated slideInDown">Service</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
@@ -95,20 +117,34 @@
 
 
         <!-- Service Start -->
-        <div class=" py-5">
-            <div class="container-xl py-5 px-lg-5">
+        <div class="py-3 py-lg-5">
+            <div class="container-xl py-3 py-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="section-title text-secondary justify-content-center"><span></span>Our Services<span></span></p>
-                    <h1 class="text-center mb-5">What Solutions We Provide</h1>
+                    <p class="section-title text-secondary justify-content-center">
+                        <span></span>
+                        <span class="lang-en" data-lang-en="Our Services" data-lang-ko="우리의 서비스">Our Services</span>
+                        <span></span>
+                    </p>
+                    <h1 class="text-center mb-5">
+                        <span class="lang-en" data-lang-en="What Solutions We Provide" data-lang-ko="우리가 제공하는 솔루션">What
+                            Solutions We Provide</span>
+                    </h1>
                 </div>
-                <div class="row g-4">
+                <div class="row gy-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-search fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">SEO Optimization</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <h5 class="mb-3">
+                                <span class="lang-en" data-lang-en="SEO Optimization" data-lang-ko="SEO 최적화">SEO
+                                    Optimization</span>
+                            </h5>
+                            <p class="mb-0 lang-en"
+                                data-lang-en="Enhance your visibility and rank higher on search engines with proven SEO techniques."
+                                data-lang-ko="검증된 SEO 기법으로 가시성을 높이고 검색 엔진에서 더 높은 순위를 달성하세요.">
+                                Enhance your visibility and rank higher on search engines with proven SEO techniques.
+                            </p>
                             <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -117,8 +153,14 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-laptop-code fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Web Design</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <h5 class="mb-3">
+                                <span class="lang-en" data-lang-en="Web Design" data-lang-ko="웹 디자인">Web Design</span>
+                            </h5>
+                            <p class="mb-0 lang-en"
+                                data-lang-en="Create stunning, responsive websites that reflect your brand and engage visitors."
+                                data-lang-ko="브랜드를 반영하고 방문자를 끌어들이는 반응형 웹사이트를 제작합니다.">
+                                Create stunning, responsive websites that reflect your brand and engage visitors.
+                            </p>
                             <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -127,8 +169,15 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fab fa-facebook-f fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Social Media Marketing</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <h5 class="mb-3">
+                                <span class="lang-en" data-lang-en="Social Media Marketing"
+                                    data-lang-ko="소셜 미디어 마케팅">Social Media Marketing</span>
+                            </h5>
+                            <p class="mb-0 lang-en"
+                                data-lang-en="Grow your audience and boost engagement through targeted social media campaigns."
+                                data-lang-ko="타겟 소셜 미디어 캠페인을 통해 청중을 확대하고 참여도를 높이세요.">
+                                Grow your audience and boost engagement through targeted social media campaigns.
+                            </p>
                             <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -137,8 +186,15 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-mail-bulk fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Email Marketing</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <h5 class="mb-3">
+                                <span class="lang-en" data-lang-en="Email Marketing" data-lang-ko="이메일 마케팅">Email
+                                    Marketing</span>
+                            </h5>
+                            <p class="mb-0 lang-en"
+                                data-lang-en="Reach your customers directly with personalized and effective email campaigns."
+                                data-lang-ko="맞춤형 이메일 캠페인으로 고객에게 직접 다가가세요.">
+                                Reach your customers directly with personalized and effective email campaigns.
+                            </p>
                             <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -147,8 +203,15 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-thumbs-up fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">PPC Advertising</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <h5 class="mb-3">
+                                <span class="lang-en" data-lang-en="PPC Advertising" data-lang-ko="PPC 광고">PPC
+                                    Advertising</span>
+                            </h5>
+                            <p class="mb-0 lang-en"
+                                data-lang-en="Drive immediate traffic and maximize ROI with targeted pay-per-click advertising."
+                                data-lang-ko="타겟 PPC 광고로 즉각적인 트래픽을 유도하고 투자 수익을 극대화하세요.">
+                                Drive immediate traffic and maximize ROI with targeted pay-per-click advertising.
+                            </p>
                             <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -157,8 +220,15 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fab fa-android fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">App Development</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <h5 class="mb-3">
+                                <span class="lang-en" data-lang-en="App Development" data-lang-ko="앱 개발">App
+                                    Development</span>
+                            </h5>
+                            <p class="mb-0 lang-en"
+                                data-lang-en="Design and develop high-performance mobile apps tailored to your business goals."
+                                data-lang-ko="비즈니스 목표에 맞춘 고성능 모바일 앱을 설계하고 개발합니다.">
+                                Design and develop high-performance mobile apps tailored to your business goals.
+                            </p>
                             <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -169,57 +239,98 @@
 
 
         <!-- Newsletter Start -->
-        <div class=" bg-primary newsletter py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container-xl py-5 px-lg-5">
+        <div class="bg-primary newsletter py-3 py-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container-xl py-3 py-lg-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 text-center">
-                        <p class="section-title text-white justify-content-center"><span></span>Newsletter<span></span></p>
-                        <h1 class="text-center text-white mb-4">Stay Always In Touch</h1>
-                        <p class="text-white mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo</p>
+                        <p class="section-title text-white justify-content-center">
+                            <span></span>
+                            <span class="lang-en" data-lang-en="Newsletter" data-lang-ko="뉴스레터">Newsletter</span>
+                            <span></span>
+                        </p>
+                        <h1 class="text-center text-white mb-4">
+                            <span class="lang-en" data-lang-en="Stay Always In Touch"
+                                data-lang-ko="항상 연결된 상태로 지내세요.">Stay Always In Touch</span>
+                        </h1>
+                        <p class="text-white mb-4">
+                            <span class="lang-en"
+                                data-lang-en="Stay connected with the latest updates, offers, and insights — directly to your inbox."
+                                data-lang-ko="최신 소식, 혜택 및 인사이트를 이메일로 받아보며 항상 연결되어 있으세요.">
+                                Stay connected with the latest updates, offers, and insights — directly to your inbox.
+                            </span>
+                        </p>
+
                         <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                placeholder="Enter Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2">
+                                <i class="fa fa-paper-plane text-primary fs-4"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- Newsletter End -->
 
 
         <!-- Testimonial Start -->
-        <div class=" py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container-xl py-5 px-lg-5">
+        <div class="py-3 py-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container-xl py-3 py-lg-5">
                 <p class="section-title text-secondary justify-content-center"><span></span>Testimonial<span></span></p>
-                <h1 class="text-center mb-5">What Say Our Clients!</h1>
+                <h1 class="text-center mb-5" data-lang-en="What Our Clients Say!" data-lang-ko="고객님의 의견을 들어보세요!"></h1>
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
+                        <p class="fs-5">
+                            <i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>
+                            <span
+                                data-lang-en="Working with this team was an incredible experience! They took our vision for the website and turned it into a fully functional, modern design. Their expertise in web development helped us create a user-friendly and professional online presence. Highly recommended!"
+                                data-lang-ko="이 팀과 함께 일하는 것은 놀라운 경험이었습니다! 그들은 웹사이트에 대한 우리의 비전을 이해하고 완전한 기능을 갖춘 현대적인 디자인으로 구현했습니다. 웹 개발에 대한 그들의 전문성 덕분에 우리는 사용자 친화적이고 전문적인 온라인 존재감을 만들 수 있었습니다. 강력히 추천합니다!">
+                            </span>
+                        </p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 65px; height: 65px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                                style="width: 65px; height: 65px;">
                             <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
+                                <h5 class="mb-1">John Doe</h5>
+                                <span data-lang-en="CEO, Tech Innovations" data-lang-ko="CEO, 기술 혁신"></span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
+                        <p class="fs-5">
+                            <i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>
+                            <span
+                                data-lang-en="The team understood our business requirements and delivered a top-notch website that met our goals. Their attention to detail and creativity were impressive. We now have a website that stands out in the industry!"
+                                data-lang-ko="팀은 우리의 비즈니스 요구 사항을 이해하고 목표에 맞는 최고의 웹사이트를 제공했습니다. 세부 사항에 대한 주의와 창의성은 인상적이었습니다. 이제 우리는 업계에서 돋보이는 웹사이트를 가지고 있습니다!">
+                            </span>
+                        </p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 65px; height: 65px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+                                style="width: 65px; height: 65px;">
                             <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
+                                <h5 class="mb-1">Jane Smith</h5>
+                                <span data-lang-en="Marketing Director, Innovative Solutions"
+                                    data-lang-ko="마케팅 이사, 혁신적인 솔루션"></span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
+                        <p class="fs-5">
+                            <i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>
+                            <span
+                                data-lang-en="We couldn't be happier with the final product! The website is not only visually stunning but also optimized for performance. Our customers love the new look, and we’ve seen a significant increase in engagement and traffic!"
+                                data-lang-ko="최종 제품에 대해 더 이상 행복할 수 없습니다! 웹사이트는 시각적으로 놀라울 뿐만 아니라 성능 최적화도 잘 되어 있습니다. 고객들은 새로운 디자인을 좋아하며, 우리는 참여도와 트래픽에서 상당한 증가를 보았습니다!">
+                            </span>
+                        </p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 65px; height: 65px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+                                style="width: 65px; height: 65px;">
                             <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
+                                <h5 class="mb-1">Alice Johnson</h5>
+                                <span data-lang-en="Founder, EcoSmart Solutions"
+                                    data-lang-ko="창립자, EcoSmart 솔루션"></span>
                             </div>
                         </div>
                     </div>
@@ -227,17 +338,28 @@
             </div>
         </div>
         <!-- Testimonial End -->
-        
+
 
         <!-- Footer Start -->
-        <div class=" bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container-xl py-5 px-lg-5">
-                <div class="row g-5">
+        <div class="bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container-xl py-3 py-lg-5">
+                <div class="row gy-5">
                     <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p class="section-title text-white h5 mb-4" data-lang-en="Address" data-lang-ko="주소">
+                            Address<span></span>
+                        </p>
+                        <p>
+                            <i class="fa fa-map-marker-alt me-3"></i>
+                            <span data-lang-en="123 Street, New York, USA" data-lang-ko="미국 뉴욕 123번 거리"></span>
+                        </p>
+                        <p>
+                            <i class="fa fa-phone-alt me-3"></i>
+                            <span data-lang-en="+012 345 67890" data-lang-ko="+012 345 67890"></span>
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope me-3"></i>
+                            <span data-lang-en="info@example.com" data-lang-ko="info@example.com"></span>
+                        </p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -246,44 +368,61 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
+                        <p class="section-title text-white h5 mb-4" data-lang-en="Quick Link" data-lang-ko="빠른 링크">
+                            Quick Link<span></span>
+                        </p>
+                        <a class="btn btn-link" href="" data-lang-en="About Us" data-lang-ko="회사 소개">About Us</a>
+                        <a class="btn btn-link" href="" data-lang-en="Contact Us" data-lang-ko="연락처">Contact Us</a>
+                        <a class="btn btn-link" href="" data-lang-en="Privacy Policy" data-lang-ko="개인정보 처리방침">Privacy
+                            Policy</a>
+                        <a class="btn btn-link" href="" data-lang-en="Terms & Condition" data-lang-ko="이용 약관">Terms &
+                            Condition</a>
+                        <a class="btn btn-link" href="" data-lang-en="Career" data-lang-ko="채용">Career</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Services<span></span></p>
-                        <a class="btn btn-link" href="">Web Development</a>
-                        <a class="btn btn-link" href="">Digital Markiting</a>
-                        <a class="btn btn-link" href="">UI/UX Design</a>
-                        <a class="btn btn-link" href="">SEO</a>
-                        <a class="btn btn-link" href="">Custom Development</a>
+                        <p class="section-title text-white h5 mb-4" data-lang-en="Services" data-lang-ko="서비스">
+                            Services<span></span>
+                        </p>
+                        <a class="btn btn-link" href="" data-lang-en="Web Development" data-lang-ko="웹 개발">Web
+                            Development</a>
+                        <a class="btn btn-link" href="" data-lang-en="Digital Marketing" data-lang-ko="디지털 마케팅">Digital
+                            Marketing</a>
+                        <a class="btn btn-link" href="" data-lang-en="UI/UX Design" data-lang-ko="UI/UX 디자인">UI/UX
+                            Design</a>
+                        <a class="btn btn-link" href="" data-lang-en="SEO" data-lang-ko="SEO">SEO</a>
+                        <a class="btn btn-link" href="" data-lang-en="Custom Development" data-lang-ko="맞춤 개발">Custom
+                            Development</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Newsletter<span></span></p>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <p class="section-title text-white h5 mb-4" data-lang-en="Newsletter" data-lang-ko="뉴스레터">
+                            Newsletter<span></span>
+                        </p>
+                        <p data-lang-en="Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu"
+                            data-lang-ko="Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu">
+                        </p>
                         <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2">
+                                <i class="fa fa-paper-plane text-primary fs-4"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-xl px-lg-5">
+            <div class="container-xl">
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="fw-medium" href="#">Yodan Web Agency</a>, All Right Reserved. 
-							
+                            <span data-lang-en="&copy; Yodan Web Agency, All Right Reserved."
+                                data-lang-ko="&copy; Yodan Web Agency, 모든 권리 보유."></span>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
+                                <a href="" data-lang-en="Home" data-lang-ko="홈">Home</a>
+                                <a href="" data-lang-en="Cookies" data-lang-ko="쿠키 정책">Cookies</a>
+                                <a href="" data-lang-en="Help" data-lang-ko="도움말">Help</a>
+                                <a href="" data-lang-en="FQAs" data-lang-ko="자주 묻는 질문">FQAs</a>
                             </div>
                         </div>
                     </div>
@@ -294,12 +433,14 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="fas fa-arrow-up"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -307,7 +448,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
