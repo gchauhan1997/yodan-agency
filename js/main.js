@@ -2,15 +2,41 @@
     "use strict";
 
     // Spinner
+    // var spinner = function () {
+    //     setTimeout(function () {
+    //         if ($('#spinner').length > 0) {
+    //             $('#spinner').removeClass('show');
+    //         }
+    //     }, 1);
+    // };
+    // spinner();
+
+
+    // Spinner
     var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
+        var spinnerElement = $('#spinner');
+        var startTime = new Date().getTime();
+
+        function hideSpinner() {
+            var currentTime = new Date().getTime();
+            var elapsedTime = currentTime - startTime;
+
+            if (spinnerElement.length > 0 && elapsedTime >= 1000) {
+                spinnerElement.removeClass('show');
+            } else if (spinnerElement.length > 0) {
+                setTimeout(hideSpinner, 1); // Check again if 1 seconds haven't passed
             }
-        }, 1);
+        }
+
+        $(window).on('load', function () {
+            if (spinnerElement.length > 0) {
+                // The 'show' class is already present in your HTML,
+                // so we don't need to add it here again.
+                setTimeout(hideSpinner, 1); // Start the timer to potentially hide it
+            }
+        });
     };
     spinner();
-
 
     // Initiate the wowjs
     new WOW().init();

@@ -7,10 +7,11 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
 
-
+    <!-- Lightbox2 CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    
+
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -30,6 +31,9 @@
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div style="position: absolute; top: 30%; left: 50%; transform: translateX(-50%);">
+                <img src="your-logo.png" alt="Loading..." style="max-width: 150px; max-height: 150px;">
+            </div>
             <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
@@ -72,8 +76,10 @@
                                     data-lang-ko="서비스">Service</a>
                                 <a href="project.html" class="nav-item nav-link" data-lang-en="Project"
                                     data-lang-ko="프로젝트">Project</a>
+                                <a href="contact.html" class="nav-item nav-link d-lg-none" data-lang-en="Contact"
+                                    data-lang-ko="문의하기">Contact</a>
                             </div>
-                            <a href="contact.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
+                            <a href="contact.html" class="btn d-none d-lg-block rounded-pill py-2 px-lg-4"
                                 data-lang-en="Contact Us" data-lang-ko="문의하기">Contact Us</a>
 
                             <!-- Desktop Language Dropdown -->
@@ -110,7 +116,7 @@
 
                         </div>
                         <div class="col-lg-6 text-center text-lg-end">
-                            <img  class="hero-img img-fluid animated zoomIn" src="img/hero-web.webp" alt="img">
+                            <img class="hero-img img-fluid animated zoomIn" src="img/hero-web.webp" alt="img">
                         </div>
                     </div>
                 </div>
@@ -429,113 +435,126 @@
                             <li class="mx-2" data-filter=".first" data-lang-en="Web Design" data-lang-ko="웹 디자인">Web
                                 Design</li>
                             <li class="mx-2" data-filter=".second" data-lang-en="Web Development" data-lang-ko="웹 개발">
-                                Web Development</li>
+                                Web Development
+                            </li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="row gy-4 portfolio-container wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="col-lg-4 col-md-6 portfolio-item first">
-                        <div class="rounded overflow-hidden">
-                            <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                                <div class="portfolio-overlay">
-                                    <a target="_blank" rel="nofollow" class="btn btn-square btn-outline-light mx-1"
-                                        href="https://kimpga.net/"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                            <div class="bg-light px-2 p-4">
-                                <p class="text-primary fw-medium mb-2">KIMPGA</p>
-                                <h5 class="lh-base mb-0" data-lang-en="Digital Trading Platform"
-                                    data-lang-ko="디지털 거래 플랫폼">Digital Trading Platform</h5>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item second">
-                        <div class="rounded overflow-hidden">
-                            <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                                <div class="portfolio-overlay">
-                                    <a target="_blank" rel="nofollow" class="btn btn-square btn-outline-light mx-1"
-                                        href="https://www.bikaglobal.one/en_US/"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                            <div class="bg-light px-2 p-4">
-                                <p class="text-primary fw-medium mb-2">Coin Chief</p>
-                                <h5 class="lh-base mb-0" data-lang-en="Online Trading Portal" data-lang-ko="온라인 거래 포털">
-                                    Online Trading Portal</h5>
-                            </div>
-                        </div>
-                    </div>
-
+                    <!-- Portfolio Item 1 -->
                     <div class="col-lg-4 col-md-6 portfolio-item first">
-                        <div class="rounded overflow-hidden">
-                            <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                                <div class="portfolio-overlay">
-                                    <a target="_blank" rel="nofollow" class="btn btn-square btn-outline-light mx-1"
-                                        href="https://kkhometuition.com/"><i class="fa fa-link"></i></a>
-                                </div>
+                        <div class="rounded overflow-hidden position-relative">
+                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="KK Home Tution">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="img/portfolio-1.jpg" data-lightbox="project1"
+                                    data-title="KK Home Tution - Dashboard"
+                                    class="btn btn-square btn-outline-light mx-1"><i class="fa fa-eye"></i></a>
+                                <a href="img/portfolio-1b.jpg" data-lightbox="project1"
+                                    data-title="KK Home Tution - Students"></a>
+                                <a href="img/portfolio-1c.jpg" data-lightbox="project1"
+                                    data-title="KK Home Tution - Payments"></a>
+                                <!-- <a href="https://kkhometuition.com/" target="_blank" rel="nofollow"
+                                    class="btn btn-square btn-outline-light mx-1"><i class="fa fa-link"></i></a> -->
                             </div>
                             <div class="bg-light py-4 px-2">
-                                <p class="text-primary fw-medium mb-2">KK Home Tution</p>
-                                <h5 class="lh-base mb-0" data-lang-en="Online Tutor Platform" data-lang-ko="온라인 튜터 플랫폼">
-                                    Online Tutor Platform</h5>
+                                <p class="text-primary fw-medium mb-2 lang-en" data-lang-en="KK Home Tution"
+                                    data-lang-ko="KK 홈 튜션">KK 홈 튜션</p>
+                                <h5 class="lh-base mb-0 lang-en" data-lang-en="Online Tutor Platform"
+                                    data-lang-ko="온라인 튜터 플랫폼">온라인 튜터 플랫폼</h5>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Portfolio Item 2 -->
                     <div class="col-lg-4 col-md-6 portfolio-item second">
-                        <div class="rounded overflow-hidden">
-                            <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                                <div class="portfolio-overlay">
-                                    <a class="btn btn-square btn-outline-light mx-1" target="_blank" rel="nofollow"
-                                        href="https://bishtholidays.com/"><i class="fa fa-link"></i></a>
-                                </div>
+                        <div class="rounded overflow-hidden position-relative">
+                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="Coin Chief">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="img/portfolio-6.jpg" data-lightbox="project2"
+                                    data-title="Coin Chief - Online Trading Portal"
+                                    class="btn btn-square btn-outline-light mx-1"><i class="fa fa-eye"></i></a>
+                                <a href="img/portfolio-6b.jpg" data-lightbox="project2"
+                                    data-title="Coin Chief - Dashboard"></a>
+                                <!-- <a href="https://www.bikaglobal.one/en_US/" target="_blank" rel="nofollow"
+                                    class="btn btn-square btn-outline-light mx-1"><i class="fa fa-link"></i></a> -->
                             </div>
                             <div class="bg-light px-2 p-4">
-                                <p class="text-primary fw-medium mb-2">Bisht Holidays</p>
-                                <h5 class="lh-base mb-0" data-lang-en="Online Booking Platform"
-                                    data-lang-ko="온라인 예약 플랫폼">Online Booking Platform</h5>
+                                <p class="text-primary fw-medium mb-2 lang-en" data-lang-en="Coin Chief"
+                                    data-lang-ko="코인 치프">코인 치프</p>
+                                <h5 class="lh-base mb-0 lang-en" data-lang-en="Online Trading Portal"
+                                    data-lang-ko="온라인 거래 포털">온라인 거래 포털</h5>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Portfolio Item 3 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item second">
+                        <div class="rounded overflow-hidden position-relative">
+                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="Bisht Holidays">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="img/portfolio-2.jpg" data-lightbox="project3"
+                                    data-title="Bisht Holidays - Booking Page"
+                                    class="btn btn-square btn-outline-light mx-1"><i class="fa fa-eye"></i></a>
+                                <a href="img/portfolio-2b.jpg" data-lightbox="project3"
+                                    data-title="Bisht Holidays - Packages"></a>
+                                <!-- <a href="https://bishtholidays.com/" target="_blank" rel="nofollow"
+                                    class="btn btn-square btn-outline-light mx-1"><i class="fa fa-link"></i></a> -->
+                            </div>
+                            <div class="bg-light px-2 p-4">
+                                <p class="text-primary fw-medium mb-2 lang-en" data-lang-en="Bisht Holidays"
+                                    data-lang-ko="비스트 홀리데이">"비스트 홀리데이</p>
+                                <h5 class="lh-base mb-0 lang-en" data-lang-en="Online Booking Platform"
+                                    data-lang-ko="온라인 예약 플랫폼">"온라인 예약 플랫폼</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4 -->
                     <div class="col-lg-4 col-md-6 portfolio-item first">
-                        <div class="rounded overflow-hidden">
-                            <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                                <div class="portfolio-overlay">
-                                    <a target="_blank" rel="nofollow" class="btn btn-square btn-outline-light mx-1"
-                                        href="https://bookittourism.com/"><i class="fa fa-link"></i></a>
-                                </div>
+                        <div class="rounded overflow-hidden position-relative">
+                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="Bookit Tourism">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="img/portfolio-3.jpg" data-lightbox="project4"
+                                    data-title="Bookit Tourism - Main Site"
+                                    class="btn btn-square btn-outline-light mx-1"><i class="fa fa-eye"></i></a>
+                                <a href="img/portfolio-3b.jpg" data-lightbox="project4"
+                                    data-title="Bookit Tourism - Tours Page"></a>
+                                <!-- <a href="https://bookittourism.com/" target="_blank" rel="nofollow"
+                                    class="btn btn-square btn-outline-light mx-1"><i class="fa fa-link"></i></a> -->
                             </div>
                             <div class="bg-light px-2 p-4">
-                                <p class="text-primary fw-medium mb-2">Bookit Tourism</p>
-                                <h5 class="lh-base mb-0" data-lang-en="Tour and Travel Agency" data-lang-ko="투어 및 여행사">
-                                    Tour and Travel Agency</h5>
+                                <p class="text-primary fw-medium mb-2 lang-en" data-lang-en="Bookit Tourism"
+                                    data-lang-ko="북잇 투어리즘">잇 투어리즘</p>
+                                <h5 class="lh-base mb-0 lang-en" data-lang-en="Tour and Travel Agency"
+                                    data-lang-ko="투어 및 여행사">투어 및 여행사</h5>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Portfolio Item 5 -->
                     <div class="col-lg-4 col-md-6 portfolio-item second">
-                        <div class="rounded overflow-hidden">
-                            <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                                <div class="portfolio-overlay">
-                                    <a target="_blank" rel="nofollow" class="btn btn-square btn-outline-light mx-1"
-                                        href="https://techsquadronsolutions.com/"><i class="fa fa-link"></i></a>
-                                </div>
+                        <div class="rounded overflow-hidden position-relative">
+                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="Tech Squadron">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="img/portfolio-4.jpg" data-lightbox="project5"
+                                    data-title="Tech Squadron - Website"
+                                    class="btn btn-square btn-outline-light mx-1"><i class="fa fa-eye"></i></a>
+                                <a href="img/portfolio-4b.jpg" data-lightbox="project5"
+                                    data-title="Tech Squadron - Services"></a>
+                                <!-- <a href="https://techsquadronsolutions.com/" target="_blank" rel="nofollow"
+                                    class="btn btn-square btn-outline-light mx-1"><i class="fa fa-link"></i></a> -->
                             </div>
-                            <div class="bg-light p-4 px-2">
-                                <p class="text-primary fw-medium mb-2">Tech Squadron</p>
-                                <h5 class="lh-base mb-0" data-lang-en="Digital Marketing Agency"
-                                    data-lang-ko="디지털 마케팅 에이전시">Digital Marketing Agency</h5>
+                            <div class="bg-light px-2 p-4">
+                                <p class="text-primary fw-medium mb-2 lang-en" data-lang-en="Tech Squadron"
+                                    data-lang-ko="테크 스쿼드론">테크 스쿼드론</p>
+                                <h5 class="lh-base mb-0 lang-en" data-lang-en="Digital Marketing Agency"
+                                    data-lang-ko="디지털 마케팅 에이전시">디지털 마케팅 에이전시</h5>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -666,9 +685,11 @@
                         <p class="section-title text-white h5 mb-4" data-lang-en="Newsletter" data-lang-ko="뉴스레터">
                             Newsletter<span></span>
                         </p>
-                        <p data-lang-en="Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu"
-                            data-lang-ko="Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu">
+                        <p data-lang-en="Subscribe to our newsletter for more updates."
+                            data-lang-ko="최신 소식을 받아보시려면 뉴스레터를 구독하세요.">
+                            Subscribe to our newsletter for more updates.
                         </p>
+
                         <div class="position-relative w-100 mt-3">
                             <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
                                 placeholder="Your Email" style="height: 48px;">
@@ -688,7 +709,7 @@
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="" data-lang-en="Home" data-lang-ko="홈">Home</a>
+                                <a href="index.html" data-lang-en="Home" data-lang-ko="홈">Home</a>
                                 <a href="" data-lang-en="Cookies" data-lang-ko="쿠키 정책">Cookies</a>
                                 <a href="" data-lang-en="Help" data-lang-ko="도움말">Help</a>
                                 <a href="" data-lang-en="FQAs" data-lang-ko="자주 묻는 질문">FQAs</a>
@@ -723,6 +744,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+     <!-- Lightbox2 JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 
 </html>
