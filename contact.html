@@ -10,7 +10,7 @@
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    
+
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -26,11 +26,11 @@
 
 <body>
     <div class=" bg-white p-0">
-         <!-- Spinner Start -->
+        <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div style="position: absolute; top: 30%; left: 50%; transform: translateX(-50%);">
-                 <img src="./img/logo-loader.svg" alt="Loading..." style="max-width: 150px; max-height: 150px;">
+                <img src="./img/logo-loader.svg" alt="Loading..." style="max-width: 150px; max-height: 150px;">
             </div>
             <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
@@ -116,63 +116,277 @@
 
         <!-- Contact Start -->
         <div class=" py-5">
-            <div class="container-xl py-3">
-                <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="section-title text-secondary justify-content-center" data-lang-en="Contact Us"
-                        data-lang-ko="문의하기">
+            <div class="container-xl py-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="mb-4 border-bottom pb-4">
+                    <p class="section-title text-secondary text-primary" data-lang-en="Contact Us" data-lang-ko="문의하기">
                         Contact Us
                     </p>
-                    <h1 class="text-center mb-5" data-lang-en="Contact For Any Query" data-lang-ko="문의 사항이 있으신가요?">
+                    <h1 class="text-start fs-2 mb-3" data-lang-en="Based on the know-how accumulated over many years, we will understand our customers' businesses and
+provide various experiences and technologies to successfully lead your project." data-lang-ko="어떤 프로젝트 문의를 하고 싶으신가요?
+지앤지넷이 함께하겠습니다.">
                         Contact For Any Query
                     </h1>
+                    <p class="text-start fw-semibold mb-4" data-lang-en="Based on the know-how accumulated over many years, we will understand our customers' businesses and
+provide various experiences and technologies to successfully lead your project." data-lang-ko="수년간 쌓아온 노하우를 바탕으로 고객의 비즈니스를 이해하고
+다양한 경험과 기술을 제공하여 여러분의 프로젝트를 성공적으로 이끌도록 노력하겠습니다.">
+                        Have a question or need support? Fill out the form below and our team will get back to
+                        you shortly.
+                    </p>
 
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
+                <div class="row justify-content-center mt-3">
+                    <div class="col">
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
-                            <p class="text-center mb-4"
-                                data-lang-en="Have a question or need support? Fill out the form below and our team will get back to you shortly."
-                                data-lang-ko="질문이 있거나 도움이 필요하신가요? 아래 양식을 작성해 주시면 저희 팀이 곧 연락드리겠습니다.">
-                                Have a question or need support? Fill out the form below and our team will get back to
-                                you shortly.
-                            </p>
                             <form>
-                                <div class="row gy-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name" data-lang-en="Your Name" data-lang-ko="이름">Your
-                                                Name</label>
+                                <section class="form-section text-start">
+                                    <h2 class="text-start text-dark" data-lang-en="Please select a project."
+                                        data-lang-ko="프로젝트를 선택하세요.">
+                                        Please select a project.
+                                    </h2>
+
+                                    <div class="d-flex flex-wrap justify-content-start">
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="responsive"
+                                            data-lang-en="Responsive Homepage" data-lang-ko="반응형 홈페이지">Responsive
+                                            Homepage</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="mobile" data-lang-en="Mobile App/Web"
+                                            data-lang-ko="모바일 앱/웹">Mobile App/Web</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="shopping" data-lang-en="Shopping Mall"
+                                            data-lang-ko="쇼핑몰">Shopping Mall</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="personal"
+                                            data-lang-en="Personal Web/Video" data-lang-ko="개인 웹/영상">Personal
+                                            Web/Video</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="print" data-lang-en="Print Production"
+                                            data-lang-ko="인쇄물 제작">Print Production</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="branding" data-lang-en="Branding"
+                                            data-lang-ko="브랜딩">Branding</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="online" data-lang-en="Online Marketing"
+                                            data-lang-ko="온라인 마케팅">Online Marketing</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="publishing" data-lang-en="Publishing"
+                                            data-lang-ko="퍼블리싱">Publishing</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="maintenance" data-lang-en="Maintenance"
+                                            data-lang-ko="유지보수">Maintenance</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="etc" data-lang-en="etc"
+                                            data-lang-ko="기타">etc</button>
+                                    </div>
+
+                                    <input type="hidden" id="project-type" name="project_type">
+                                </section>
+
+
+                                <section class="form-section">
+                                    <h2 class="text-start text-dark" data-lang-en="Please select the project type."
+                                        data-lang-ko="프로젝트 유형을 선택하세요.">
+                                        Please select the project type.
+                                    </h2>
+
+                                    <div class="d-flex flex-wrap justify-content-start">
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="create" data-lang-en="Create new"
+                                            data-lang-ko="신규 제작">Create new</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="renewal" data-lang-en="Renewal"
+                                            data-lang-ko="리뉴얼">Renewal</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="maintenance2" data-lang-en="Maintenance"
+                                            data-lang-ko="유지보수">Maintenance</button>
+
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="etc2" data-lang-en="etc"
+                                            data-lang-ko="기타">etc</button>
+                                    </div>
+
+                                    <input type="hidden" id="project-type-2" name="project_type_2">
+                                </section>
+
+
+                                <!-- Project Information -->
+                                <section class="form-section">
+                                    <h2 class="text-dark text-start"
+                                        data-lang-en="Please enter the project information."
+                                        data-lang-ko="프로젝트 정보를 입력해 주세요.">
+                                        Please enter the project information.
+                                    </h2>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="project-name" class="form-label" data-lang-en="Project Name"
+                                                data-lang-ko="프로젝트명">Project Name</label>
+                                            <input type="text" class="form-control" id="project-name"
+                                                name="project_name" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="opening-date" class="form-label" data-lang-en="Opening Date"
+                                                data-lang-ko="오픈 예정일">Opening Date</label>
+                                            <input type="date" class="form-control" id="opening-date"
+                                                name="opening_date">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="project-budget" class="form-label" data-lang-en="Project Budget"
+                                                data-lang-ko="예산">Project Budget</label>
+                                            <select id="project-budget" name="project_budget" class="form-select">
+                                                <option value="" disabled selected
+                                                    data-lang-en="Please select a project budget option"
+                                                    data-lang-ko="예산 옵션을 선택해 주세요.">Please select a project budget option
+                                                </option>
+                                                <option value="less-than-10m" data-lang-en="Less than 10 million"
+                                                    data-lang-ko="1천만원 미만">Less than 10 million</option>
+                                                <option value="10m-30m" data-lang-en="10 - 30 million"
+                                                    data-lang-ko="1천만~3천만원">10 - 30 million</option>
+                                                <option value="30m-50m" data-lang-en="30 - 50 million"
+                                                    data-lang-ko="3천만~5천만원">30 - 50 million</option>
+                                                <option value="50m-100m" data-lang-en="50 - 100 million"
+                                                    data-lang-ko="5천만~1억">50 - 100 million</option>
+                                                <option value="more-than-100m" data-lang-en="More than 100 million"
+                                                    data-lang-ko="1억 이상">More than 100 million</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="related-sites" class="form-label" data-lang-en="Related Sites"
+                                                data-lang-ko="참고 사이트">Related Sites</label>
+                                            <input type="url" class="form-control" id="related-sites"
+                                                name="related_sites"
+                                                placeholder="Enter the URL of your preferred reference sites"
+                                                data-lang-en="Enter the URL of your preferred reference sites"
+                                                data-lang-ko="참고하고 싶은 사이트의 URL을 입력해 주세요.">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="project-details" class="form-label"
+                                                data-lang-en="Project Details" data-lang-ko="상세 내용">Project
+                                                Details</label>
+                                            <textarea class="form-control" id="project-details" name="project_details"
+                                                rows="4" required></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="file-upload" class="form-label d-block"
+                                                data-lang-en="Attach a file" data-lang-ko="파일 첨부">Attach a file</label>
+                                            <div class="file-upload-button">
+                                                <span data-lang-en="Register an attached file (maximum 20MB)"
+                                                    data-lang-ko="파일을 등록해 주세요 (최대 20MB)">Register an attached file
+                                                    (maximum 20MB)</span>
+                                                <input type="file" id="file-upload" name="file_upload" accept="*">
+                                            </div>
+                                            <small class="form-text text-danger d-block"
+                                                data-lang-en="File size should be less than 20MB."
+                                                data-lang-ko="파일 용량은 20MB 이하여야 합니다.">File size should be less than
+                                                20MB.</small>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Your Email">
-                                            <label for="email" data-lang-en="Your Email" data-lang-ko="이메일">Your
-                                                Email</label>
+                                </section>
+
+                                <!-- Basic Information -->
+                                <section class="form-section">
+                                    <h2 class="text-dark text-start" data-lang-en="Please enter basic information."
+                                        data-lang-ko="기본 정보를 입력해 주세요.">
+                                        Please enter basic information.
+                                    </h2>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="company-name" class="form-label" data-lang-en="Company Name"
+                                                data-lang-ko="회사명">Company Name</label>
+                                            <input type="text" class="form-control" id="company-name"
+                                                name="company_name" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="manager-name" class="form-label" data-lang-en="Manager"
+                                                data-lang-ko="담당자">Manager</label>
+                                            <input type="text" class="form-control" id="manager-name"
+                                                name="manager_name" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="contact-number" class="form-label" data-lang-en="Contact"
+                                                data-lang-ko="연락처">Contact</label>
+                                            <input type="tel" class="form-control" id="contact-number"
+                                                name="contact_number" placeholder="Enter your contact information"
+                                                data-lang-en="Enter your contact information"
+                                                data-lang-ko="연락처를 입력해 주세요." required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="email-address" class="form-label" data-lang-en="Email"
+                                                data-lang-ko="이메일">Email</label>
+                                            <input type="email" class="form-control" id="email-address"
+                                                name="email_address" placeholder="Enter your email address"
+                                                data-lang-en="Enter your email address" data-lang-ko="이메일 주소를 입력해 주세요."
+                                                required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="existing-site" class="form-label" data-lang-en="Existing Site"
+                                                data-lang-ko="기존 사이트">Existing Site</label>
+                                            <input type="url" class="form-control" id="existing-site"
+                                                name="existing_site" placeholder="Enter your existing site (optional)"
+                                                data-lang-en="Enter your existing site (optional)"
+                                                data-lang-ko="기존 사이트가 있다면 입력해 주세요 (선택)">
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject" data-lang-en="Subject"
-                                                data-lang-ko="제목">Subject</label>
-                                        </div>
+                                </section>
+
+                                <!-- How did you find out -->
+                                <section class="form-section">
+                                    <h2 class="text-start text-dark" data-lang-en="How did you find out about G&G Net?"
+                                        data-lang-ko="G&G Net을 어떻게 알게 되었나요?">
+                                        How did you find out about G&G Net?
+                                    </h2>
+                                    <div class="d-flex flex-wrap">
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="existing"
+                                            data-lang-en="Existing clients" data-lang-ko="기존 고객">Existing
+                                            clients</button>
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="introduction"
+                                            data-lang-en="Introduction of acquaintances"
+                                            data-lang-ko="지인의 소개">Introduction of acquaintances</button>
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="google" data-lang-en="Google search"
+                                            data-lang-ko="구글 검색">Google search</button>
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="naver" data-lang-en="Naver search"
+                                            data-lang-ko="네이버 검색">Naver search</button>
+                                        <button type="button" class="btn btn-outline-primary toggle-button"
+                                            data-bs-toggle="button" data-value="etc3" data-lang-en="etc"
+                                            data-lang-ko="기타">etc</button>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here"
-                                                id="message" style="height: 150px"></textarea>
-                                            <label for="message" data-lang-en="Message"
-                                                data-lang-ko="메시지">Message</label>
-                                        </div>
+                                    <input type="hidden" id="uznal-o-nas" name="uznal-o-nas">
+                                </section>
+
+
+                                <section class="form-section">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="privacy-agreement"
+                                            name="privacy_agreement" required>
+                                        <label class="form-check-label" for="privacy-agreement"
+                                            data-lang-en="I agree to the privacy policy."
+                                            data-lang-ko="개인정보 처리방침에 동의합니다.">
+                                            I agree to the privacy policy.
+                                        </label>
                                     </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit"
-                                            data-lang-en="Send Message" data-lang-ko="메시지 보내기">Send Message</button>
-                                    </div>
+                                </section>
+
+                                <div class="text-start mt-4">
+                                    <button type="submit" class="btn btn-primary px-5" data-lang-en="Submit"
+                                        data-lang-ko="제출하기">
+                                        Submit
+                                    </button>
                                 </div>
+
                             </form>
                         </div>
                     </div>
@@ -240,10 +454,10 @@
                         <p class="section-title text-white h5 mb-4" data-lang-en="Newsletter" data-lang-ko="뉴스레터">
                             Newsletter<span></span>
                         </p>
-                       <p data-lang-en="Subscribe to our newsletter for more updates."
-   data-lang-ko="최신 소식을 받아보시려면 뉴스레터를 구독하세요.">
-   Subscribe to our newsletter for more updates.
-</p>
+                        <p data-lang-en="Subscribe to our newsletter for more updates."
+                            data-lang-ko="최신 소식을 받아보시려면 뉴스레터를 구독하세요.">
+                            Subscribe to our newsletter for more updates.
+                        </p>
 
                         <div class="position-relative w-100 mt-3">
                             <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
