@@ -10,7 +10,7 @@
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    
+
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div style="position: absolute; top: 30%; left: 50%; transform: translateX(-50%);">
-                <img src="your-logo.png" alt="Loading..." style="max-width: 150px; max-height: 150px;">
+                 <img src="./img/logo-loader.svg" alt="Loading..." style="max-width: 150px; max-height: 150px;">
             </div>
             <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
@@ -245,23 +245,56 @@
         <!-- Facts End -->
 
 
-        <!-- Team Start -->
-        <div class=" py-5">
+        <!-- our team -->
+
+        <div class="py-3 py-lg-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container-xl py-5 px-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="section-title text-secondary justify-content-center"><span></span>Our Team<span></span>
+                    <p data-lang-en="Our Team" data-lang-ko="우리 팀" class="section-title text-secondary justify-content-center">
+                        
                     </p>
-                    <h1 class="text-center mb-5">Our Team Members</h1>
+                    <h1 class="text-center mb-5" data-lang-en="Our Team Members" data-lang-ko="우리 팀 구성원">Our Team
+                        Members</h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item bg-light rounded">
+                        <div class="team-item bg-white rounded shadow-lg h-100">
                             <div class="text-center border-bottom p-4">
                                 <img class="img-fluid rounded-circle mb-4" src="img/team-1.jpg" alt="">
-                                <h5>John Doe</h5>
-                                <span>CEO & Founder</span>
+                                <h5 data-lang-en="John Doe" data-lang-ko="존 도">John Doe</h5>
+                                <span data-lang-en="CEO & Founder" data-lang-ko="최고 경영자 & 창립자">CEO & Founder</span>
                             </div>
-                            <div class="d-flex justify-content-center p-4">
+                            <div class="p-4">
+                                <h6 class="mb-3" data-lang-en="Description" data-lang-ko="설명">Description</h6>
+                                <p class="small text-muted"
+                                    data-lang-en="John is a visionary leader with a passion for innovation and growth."
+                                    data-lang-ko="존은 혁신과 성장에 대한 열정을 가진 선구적인 리더입니다.">John is a visionary leader with a
+                                    passion for innovation and growth.</p>
+                                <h6 class="mb-3" data-lang-en="Education" data-lang-ko="학력">Education</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li data-lang-en="University:" data-lang-ko="대학교:"><strong>University:</strong>
+                                        Example University</li>
+                                    <li data-lang-en="Degree:" data-lang-ko="학위:"><strong>Degree:</strong> MBA</li>
+                                </ul>
+                                <h6 class="mb-3" data-lang-en="Career History" data-lang-ko="경력">Career History</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li data-lang-en="Company:" data-lang-ko="회사:"><strong>Company:</strong> Previous
+                                        Company A</li>
+                                    <li data-lang-en="Position:" data-lang-ko="직책:"><strong>Position:</strong> Senior
+                                        Manager</li>
+                                    <li data-lang-en="Company:" data-lang-ko="회사:"><strong>Company:</strong> Previous
+                                        Company B</li>
+                                    <li data-lang-en="Position:" data-lang-ko="직책:"><strong>Position:</strong> Director
+                                    </li>
+                                </ul>
+                                <h6 class="mb-3" data-lang-en="A Word About John" data-lang-ko="존에 대한 이야기">A Word About
+                                    John</h6>
+                                <p class="fst-italic small text-muted"
+                                    data-lang-en='"I believe in empowering teams and fostering a collaborative environment."'
+                                    data-lang-ko='"저는 팀을 지원하고 협력적인 환경을 조성하는 것을 믿습니다."'>"I believe in empowering teams
+                                    and fostering a collaborative environment."</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-4 border-top">
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
@@ -270,13 +303,40 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item bg-light rounded">
+                        <div class="team-item bg-white rounded shadow-lg h-100">
                             <div class="text-center border-bottom p-4">
                                 <img class="img-fluid rounded-circle mb-4" src="img/team-2.jpg" alt="">
-                                <h5>Jessica Brown</h5>
-                                <span>Web Designer</span>
+                                <h5 data-lang-en="Jessica Brown" data-lang-ko="제시카 브라운">Jessica Brown</h5>
+                                <span data-lang-en="Web Designer" data-lang-ko="웹 디자이너">Web Designer</span>
                             </div>
-                            <div class="d-flex justify-content-center p-4">
+                            <div class="p-4">
+                                <h6 class="mb-3" data-lang-en="Description" data-lang-ko="설명">Description</h6>
+                                <p class="small text-muted"
+                                    data-lang-en="Jessica is a creative and skilled web designer with a focus on user experience."
+                                    data-lang-ko="제시카는 사용자 경험에 중점을 둔 창의적이고 숙련된 웹 디자이너입니다.">Jessica is a creative and
+                                    skilled web designer with a focus on user experience.</p>
+                                <h6 class="mb-3" data-lang-en="Education" data-lang-ko="학력">Education</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li data-lang-en="University:" data-lang-ko="대학교:"><strong>University:</strong>
+                                        Design Institute</li>
+                                    <li data-lang-en="Degree:" data-lang-ko="학위:"><strong>Degree:</strong> BFA in Web
+                                        Design</li>
+                                </ul>
+                                <h6 class="mb-3" data-lang-en="Career History" data-lang-ko="경력">Career History</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li data-lang-en="Company:" data-lang-ko="회사:"><strong>Company:</strong> Freelance
+                                    </li>
+                                    <li data-lang-en="Position:" data-lang-ko="직책:"><strong>Position:</strong> Web
+                                        Designer</li>
+                                </ul>
+                                <h6 class="mb-3" data-lang-en="A Word About Jessica" data-lang-ko="제시카에 대한 이야기">A Word
+                                    About Jessica</h6>
+                                <p class="fst-italic small text-muted"
+                                    data-lang-en='"I strive to create visually appealing and user-friendly websites."'
+                                    data-lang-ko='"저는 시각적으로 매력적이고 사용자 친화적인 웹사이트를 만들기 위해 노력합니다."'>"I strive to create
+                                    visually appealing and user-friendly websites."</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-4 border-top">
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
@@ -285,13 +345,44 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item bg-light rounded">
+                        <div class="team-item bg-white rounded shadow-lg h-100">
                             <div class="text-center border-bottom p-4">
                                 <img class="img-fluid rounded-circle mb-4" src="img/team-3.jpg" alt="">
-                                <h5>Tony Johnson</h5>
-                                <span>SEO Expert</span>
+                                <h5 data-lang-en="Tony Johnson" data-lang-ko="토니 존슨">Tony Johnson</h5>
+                                <span data-lang-en="SEO Expert" data-lang-ko="SEO 전문가">SEO Expert</span>
                             </div>
-                            <div class="d-flex justify-content-center p-4">
+                            <div class="p-4">
+                                <h6 class="mb-3" data-lang-en="Description" data-lang-ko="설명">Description</h6>
+                                <p class="small text-muted"
+                                    data-lang-en="Tony is a highly experienced SEO expert with a proven track record of success."
+                                    data-lang-ko="토니는 성공적인 실적을 입증한 매우 경험 많은 SEO 전문가입니다.">Tony is a highly experienced
+                                    SEO expert with a proven track record of success.</p>
+                                <h6 class="mb-3" data-lang-en="Education" data-lang-ko="학력">Education</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li data-lang-en="University:" data-lang-ko="대학교:"><strong>University:</strong>
+                                        Marketing College</li>
+                                    <li data-lang-en="Degree:" data-lang-ko="학위:"><strong>Degree:</strong> BS in
+                                        Marketing</li>
+                                </ul>
+                                <h6 class="mb-3" data-lang-en="Career History" data-lang-ko="경력">Career History</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li data-lang-en="Company:" data-lang-ko="회사:"><strong>Company:</strong> SEO Agency
+                                        X</li>
+                                    <li data-lang-en="Position:" data-lang-ko="직책:"><strong>Position:</strong> SEO
+                                        Specialist</li>
+                                    <li data-lang-en="Company:" data-lang-ko="회사:"><strong>Company:</strong> Digital
+                                        Marketing Firm Y</li>
+                                    <li data-lang-en="Position:" data-lang-ko="직책:"><strong>Position:</strong> SEO
+                                        Manager</li>
+                                </ul>
+                                <h6 class="mb-3" data-lang-en="A Word About Tony" data-lang-ko="토니에 대한 이야기">A Word About
+                                    Tony</h6>
+                                <p class="fst-italic small text-muted"
+                                    data-lang-en='"My goal is to drive organic traffic and improve online visibility for our clients."'
+                                    data-lang-ko='"저의 목표는 고객을 위해 유기적인 트래픽을 유도하고 온라인 가시성을 향상시키는 것입니다."'>"My goal is to
+                                    drive organic traffic and improve online visibility for our clients."</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-4 border-top">
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
@@ -302,7 +393,143 @@
                 </div>
             </div>
         </div>
-        <!-- Team End -->
+
+
+        <div class="py-3 py-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container-xl py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p data-lang-ko="우리 팀" data-lang-en="Our Team"
+                        class="section-title text-secondary justify-content-center">
+                        <span data-lang-ko="우리 팀" data-lang-en="Our Team"></span>
+                    </p>
+                    <h1 class="text-center mb-5" data-lang-en="Our Team Members" data-lang-ko="우리 팀 구성원">Our Team
+                        Members
+                    </h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-white rounded shadow-lg h-100">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/team-1.jpg" alt="">
+                                <h5 data-lang-en="John Doe" data-lang-ko="존 도">John Doe</h5>
+                                <span data-lang-en="CEO & Founder" data-lang-ko="최고 경영자 & 창립자">CEO & Founder</span>
+                            </div>
+                            <div class="p-4">
+                                <p class="small text-muted mb-2"
+                                    data-lang-en="John is a visionary leader with a passion for innovation and growth."
+                                    data-lang-ko="존은 혁신과 성장에 대한 열정을 가진 선구적인 리더입니다.">John is a visionary leader with a
+                                    passion for innovation and growth.</p>
+                                <ul class="list-unstyled small text-muted mb-2">
+                                    <li data-lang-en="University:" data-lang-ko="대학교:"><strong>University:</strong>
+                                        Example University</li>
+                                    <li data-lang-en="Degree:" data-lang-ko="학위:"><strong>Degree:</strong> MBA</li>
+                                </ul>
+                                <ul class="list-unstyled small text-muted mb-2">
+                                    <li data-lang-en="Company:" data-lang-ko="회사:"><strong>Company:</strong> Previous
+                                        Company A</li>
+                                    <li data-lang-en="Position:" data-lang-ko="직책:"><strong>Position:</strong> Senior
+                                        Manager</li>
+                                    <li data-lang-en="Company:" data-lang-ko="회사:"><strong>Company:</strong> Previous
+                                        Company B</li>
+                                    <li data-lang-en="Position:" data-lang-ko="직책:"><strong>Position:</strong> Director
+                                    </li>
+                                </ul>
+                                <p class="fst-italic small text-muted"
+                                    data-lang-en='"I believe in empowering teams and fostering a collaborative environment."'
+                                    data-lang-ko='"저는 팀을 지원하고 협력적인 환경을 조성하는 것을 믿습니다."'>"I believe in empowering teams
+                                    and fostering a collaborative environment."</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-4 border-top">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item bg-white rounded shadow-lg h-100">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/team-2.jpg" alt="">
+                                <h5 data-lang-en="Jessica Brown" data-lang-ko="제시카 브라운">Jessica Brown</h5>
+                                <span data-lang-en="Web Designer" data-lang-ko="웹 디자이너">Web Designer</span>
+                            </div>
+                            <div class="p-4">
+                                <p class="small text-muted mb-2"
+                                    data-lang-en="Jessica is a creative and skilled web designer with a focus on user experience."
+                                    data-lang-ko="제시카는 사용자 경험에 중점을 둔 창의적이고 숙련된 웹 디자이너입니다.">Jessica is a creative and
+                                    skilled web designer with a focus on user experience.</p>
+                                <ul class="list-unstyled small text-muted mb-2">
+                                    <li data-lang-en="University:" data-lang-ko="대학교:"><strong>University:</strong>
+                                        Design Institute</li>
+                                    <li data-lang-en="Degree:" data-lang-ko="학위:"><strong>Degree:</strong> BFA in Web
+                                        Design</li>
+                                </ul>
+                                <ul class="list-unstyled small text-muted mb-2">
+                                    <li data-lang-en="Company:" data-lang-ko="회사:"><strong>Company:</strong> Freelance
+                                    </li>
+                                    <li data-lang-en="Position:" data-lang-ko="직책:"><strong>Position:</strong> Web
+                                        Designer</li>
+                                </ul>
+                                <p class="fst-italic small text-muted"
+                                    data-lang-en='"I strive to create visually appealing and user-friendly websites."'
+                                    data-lang-ko='"저는 시각적으로 매력적이고 사용자 친화적인 웹사이트를 만들기 위해 노력합니다."'>"I strive to create
+                                    visually appealing and user-friendly websites."</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-4 border-top">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item bg-white rounded shadow-lg h-100">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/team-3.jpg" alt="">
+                                <h5 data-lang-en="Tony Johnson" data-lang-ko="토니 존슨">Tony Johnson</h5>
+                                <span data-lang-en="SEO Expert" data-lang-ko="SEO 전문가">SEO Expert</span>
+                            </div>
+                            <div class="p-4">
+                                <p class="small text-muted mb-2"
+                                    data-lang-en="Tony is a highly experienced SEO expert with a proven track record of success."
+                                    data-lang-ko="토니는 성공적인 실적을 입증한 매우 경험 많은 SEO 전문가입니다.">Tony is a highly experienced
+                                    SEO expert with a proven track record of success.</p>
+                                <ul class="list-unstyled small text-muted mb-2">
+                                    <li data-lang-en="University:" data-lang-ko="대학교:"><strong>University:</strong>
+                                        Marketing College</li>
+                                    <li data-lang-en="Degree:" data-lang-ko="학위:"><strong>Degree:</strong> BS in
+                                        Marketing</li>
+                                </ul>
+                                <ul class="list-unstyled small text-muted mb-2">
+                                    <li data-lang-en="Company:" data-lang-ko="회사:"><strong>Company:</strong> SEO Agency
+                                        X</li>
+                                    <li data-lang-en="Position:" data-lang-ko="직책:"><strong>Position:</strong> SEO
+                                        Specialist</li>
+                                    <li data-lang-en="Company:" data-lang-ko="회사:"><strong>Company:</strong> Digital
+                                        Marketing Firm Y</li>
+                                    <li data-lang-en="Position:" data-lang-ko="직책:"><strong>Position:</strong> SEO
+                                        Manager</li>
+                                </ul>
+                                <p class="fst-italic small text-muted"
+                                    data-lang-en='"My goal is to drive organic traffic and improve online visibility for our clients."'
+                                    data-lang-ko='"저의 목표는 고객을 위해 유기적인 트래픽을 유도하고 온라인 가시성을 향상시키는 것입니다."'>"My goal is to
+                                    drive organic traffic and improve online visibility for our clients."</p>
+                            </div>
+                            <div class="d-flex justify-content-center p-4 border-top">
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- our team -->
 
 
         <!-- Footer Start -->
@@ -362,10 +589,10 @@
                         <p class="section-title text-white h5 mb-4" data-lang-en="Newsletter" data-lang-ko="뉴스레터">
                             Newsletter<span></span>
                         </p>
-                       <p data-lang-en="Subscribe to our newsletter for more updates."
-   data-lang-ko="최신 소식을 받아보시려면 뉴스레터를 구독하세요.">
-   Subscribe to our newsletter for more updates.
-</p>
+                        <p data-lang-en="Subscribe to our newsletter for more updates."
+                            data-lang-ko="최신 소식을 받아보시려면 뉴스레터를 구독하세요.">
+                            Subscribe to our newsletter for more updates.
+                        </p>
 
                         <div class="position-relative w-100 mt-3">
                             <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
