@@ -490,6 +490,13 @@ a {
 }
 
 
+/* contact us */
+.contact-us-container {
+    background: url(../img/contact-us-bg.png) center center no-repeat;
+}
+/* contact us */
+
+
 /*** Testimonial ***/
 .testimonial-carousel .testimonial-item {
     padding: 0 30px 30px 30px;
