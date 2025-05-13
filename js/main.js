@@ -1,16 +1,6 @@
 (function ($) {
     "use strict";
 
-    // Spinner
-    // var spinner = function () {
-    //     setTimeout(function () {
-    //         if ($('#spinner').length > 0) {
-    //             $('#spinner').removeClass('show');
-    //         }
-    //     }, 1);
-    // };
-    // spinner();
-
 
     // Spinner
     var spinner = function () {
@@ -145,3 +135,20 @@ window.addEventListener('DOMContentLoaded', () => {
     setLanguage(savedLang);
 });
 
+// term and cond
+
+document.addEventListener('DOMContentLoaded', function () {
+    const policyToggle = document.querySelector('.privacy-policy-toggle');
+    const policyContent = document.querySelector('.privacy-policy-content');
+    const policyCloseButton = document.querySelector('.privacy-policy-close');
+
+    policyToggle.addEventListener('click', function () {
+        policyContent.classList.toggle('expanded');
+    });
+
+    if (policyCloseButton) {
+        policyCloseButton.addEventListener('click', function () {
+            policyContent.classList.remove('expanded');
+        });
+    }
+});

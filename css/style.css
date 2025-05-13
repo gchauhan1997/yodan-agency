@@ -159,9 +159,11 @@ a {
 }
 
 @media (max-width: 991.98px) {
+   
     .sticky-top.navbar-light {
-        position: relative;
+        position: fixed;
         background: #FFFFFF;
+        width: 100%;
     }
 
     .navbar-light .navbar-collapse {
@@ -361,6 +363,7 @@ a {
     background-repeat: no-repeat;
 }
 
+.portolio-img { height: 260px;border-bottom: 1px solid #dbdbdb; object-fit: cover;}
 
 /*** Service ***/
 .service-item {
@@ -444,6 +447,7 @@ a {
     border-color: var(--primary);
 }
 
+
 .portfolio-item img {
     transition: .5s;
 }
@@ -494,6 +498,7 @@ a {
 .contact-us-container {
     background: url(../img/contact-us-bg.png) center center no-repeat;
 }
+
 /* contact us */
 
 
@@ -673,6 +678,7 @@ a {
 
 .toggle-button:hover {
     background-color: #d3d9df;
+    color: #0c0b0bfb;
     /* Hover color */
     border-color: #b1bfcc;
 }
@@ -736,7 +742,9 @@ a {
     margin-right: 0.75rem;
 }
 
-.form-label { font-weight: 600; }
+.form-label {
+    font-weight: 600;
+}
 
 .file-upload-button input[type="file"] {
     position: absolute;
@@ -747,4 +755,30 @@ a {
     width: 100%;
     /* make the input cover the button */
     height: 100%;
+}
+
+/* privicy policy */
+
+.privacy-policy-content {
+    padding: 0 0 0 22px;
+    max-height: 0;
+    /* Initially set height to 0 */
+    overflow: hidden;
+    /* Hide content that overflows */
+    transition: max-height 0.3s ease-in-out,
+        padding 0.3s ease-in-out,
+        border 0.3s ease-in-out,
+        margin 0.3s ease-in-out;
+    /* Add transitions */
+}
+
+.privacy-policy-content.expanded {
+    max-height: 500px;
+    /* Set a reasonable max height, adjust as needed */
+    padding: 0 0 0 22px;
+    margin-top: 10px;
+}
+
+.privacy-policy-toggle {
+    cursor: pointer;
 }
