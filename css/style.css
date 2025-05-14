@@ -782,3 +782,9 @@ a {
 .privacy-policy-toggle {
     cursor: pointer;
 }
+
+.team-member-img {
+    height: 284px;
+    width: 284px;
+    object-fit: cover;
+}
